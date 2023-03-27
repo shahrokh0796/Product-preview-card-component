@@ -6,48 +6,45 @@
   <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | Product preview card component</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="" referrerpolicy="no-referrer">
 </head>
 <body>
 
-  <div class="card-container-main">
+  <main product="container">
+      <picture>
+        <source media="(max-width: 399px)" 
+        srcset="images/image-product-mobile.jpg" />
+        <source media="(min-width: 400px)" 
+        srcset="images/image-product-desktop-400x650.png"  />
+        <img src="" alt="">
+      </picture>
 
-    <div class="container">
-
-      <div class="card-left-img">
-        <img src="./images/image-product-desktop.jpg" alt="perfume">
+    <div class="product-all-details">
+      <p>PERFUME</p>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creater for the House of CHANEL.</p>
+      <div class="price">
+        <strong>$149.99</strong>  
+          <del>
+              $169.99
+            <span class="visually-hidden">
+              old price
+            </span>
+          </del>
       </div>
-
-      <div class="card-right">
-
-        <div class="card-image-mobile">
-          <img src="./images/image-product-mobile.jpg" alt="perfume">
-        </div>
-
-        <div class="card-component">
-          <div class="card-name-description">
-            <h5 class="pt">PERFUME</h5>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p>
-              A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-              Perfumer-Creator for the House of CHANEL.
-            </p>
-          </div>
-
-          <div class="card-price">
-            <span>$149.99</span> <span>$169.99</span>
-          </div>
-          <div class="card-btn">
-            <button><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
-          </div>
-        </div>
-      </div>
+      <button type="button">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Add To Cart
+      </button>
     </div>
-  </div>
+  </main>
 
-  <div class="attribution">
+  
+  <hr>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Said</a>.
-  </div>
+    Coded by <a href="#">Said Shahrokh Temori</a>.
+  </footer>
+
 </body>
 </html>
