@@ -17,10 +17,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-source {
-  display: none;
-}
-
 html, body {
     height: 100%;
 }
@@ -34,6 +30,7 @@ body {
     max-inline-size: 1440px;
     padding: 1rem;
     -webkit-font-smoothing: antialiased;
+    position: relative;
 }
 
 img, picture {
@@ -44,8 +41,6 @@ img, picture {
 picture img {
   min-height: 100%;
   object-fit: cover;
-  border-start-start-radius: 0.5rem;
-  border-end-start-radius: 0.5rem;
 }
 
   input, button, textarea, select {
@@ -60,6 +55,7 @@ picture img {
   main {
     background-color: var(--color-white-);
     border-radius: 0.5rem;
+    overflow: clip;
   }
 
   h1 {
@@ -141,15 +137,8 @@ hr {
 }
 
 
-@media screen and (max-width: 400px) {
-  picture img {
-    border-end-start-radius: 0;
-    border-start-end-radius: 0.5rem;
-  }
-}
 
-
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 25rem) {
     main {
         display: flex;
         max-inline-size: 568px;
