@@ -6,6 +6,6 @@ Read me of product-preview-card-component step wise
 
 3-> I Have Divided the component in two main parts, one part for the image of the product and another for rest of the product details.
 
-4-> To see the project live please visit this link: https://calm-tiramisu-86f235.netlify.app
+4-> To see the project live please visit this link: https://profound-tarsier-fd4cc2.netlify.app
 
 Thank you :D
