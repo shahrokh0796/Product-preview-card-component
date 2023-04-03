@@ -27,10 +27,8 @@ body {
     display: grid;
     place-items: center;
     line-height: 1.5;
-    max-inline-size: 1440px;
     padding: 1rem;
     -webkit-font-smoothing: antialiased;
-    position: relative;
 }
 
 img, picture {
@@ -48,7 +46,6 @@ picture img {
   }
 
   p {
-    overflow-wrap: break-word;
     color: var(--color-dark-grayish-blue-);
   }
 
@@ -67,7 +64,8 @@ picture img {
     color: var(--color-dark-blue-);
 
   }
-  p:nth-of-type(1) {
+ .p-category {
+  text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 500;
     font-size: 0.875rem;
@@ -100,7 +98,6 @@ picture img {
     color: var(--color-dark-grayish-blue-);
     font-weight: 500;
     font-size: 1rem;
-    visibility: visible;
 }
 
 .visually-hidden {
@@ -145,7 +142,7 @@ hr {
         inline-size: 100%;
     }
 
-    main > div {
+    .product-all-details {
         max-width: 50%;
     }
   }
